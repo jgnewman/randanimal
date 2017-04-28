@@ -51,7 +51,7 @@ function randomName(num) {
     var joined = ads.length > 1 ? ads.join(' ') : ads[0];
     return joined + ' ' + an;
   } else {
-    return randomName();
+    return randomName(num);
   }
 }
 
