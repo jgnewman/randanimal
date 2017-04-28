@@ -2,7 +2,7 @@
   "name": "randanimal",
   "version": "1.0.0",
   "description": "Generates a random combination of adjective and animal name.",
-  "main": "index.js",
+  "main": "bin/index.js",
   "repository": "git@github.com:jgnewman/randanimal",
   "author": "John Newman <rescuecreative@gmail.com>",
   "license": "MIT",
