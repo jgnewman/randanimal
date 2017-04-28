@@ -1,6 +1,6 @@
 {
   "name": "randanimal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a random combination of adjective and animal name.",
   "main": "bin/index.js",
   "repository": "git@github.com:jgnewman/randanimal",

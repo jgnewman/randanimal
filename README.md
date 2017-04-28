@@ -30,7 +30,7 @@ randanimal().then(name => console.log(name))
 // 'Trilinear Chupacabra'
 ```
 
-But you can also control how many adjectvies to use by dropping that number is as an argument.
+But you can also control how many adjectvies to use by dropping that number in as an argument.
 
 ```javascript
 randanimal(3);
