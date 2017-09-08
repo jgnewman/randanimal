@@ -26,7 +26,7 @@ function anyAreEqual(arr) {
   }
 }
 
-function randomName(num) {
+function randomName(num, joinery = ' ') {
   const an = randomItem(animals);
   const ads = [];
 
@@ -34,13 +34,17 @@ function randomName(num) {
     num = 1;
   }
 
+  if (num === 0) {
+    return an;
+  }
+  
   for (let i = 0; i < num; i += 1) {
     ads.push(randomItem(adjectives))
   }
 
   if (!anyAreEqual(ads)) {
-    const joined = ads.length > 1 ? ads.join(' ') : ads[0];
-    return joined + ' ' + an;
+    const joined = ads.length > 1 ? ads.join(joinery) : ads[0];
+    return joined + joinery + an;
   } else {
     return randomName(num);
   }

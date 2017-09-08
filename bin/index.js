@@ -36,6 +36,8 @@ function anyAreEqual(arr) {
 }
 
 function randomName(num) {
+  var joinery = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : ' ';
+
   var an = randomItem(_animals2.default);
   var ads = [];
 
@@ -43,13 +45,17 @@ function randomName(num) {
     num = 1;
   }
 
+  if (num === 0) {
+    return an;
+  }
+
   for (var i = 0; i < num; i += 1) {
     ads.push(randomItem(_adjectives2.default));
   }
 
   if (!anyAreEqual(ads)) {
-    var joined = ads.length > 1 ? ads.join(' ') : ads[0];
-    return joined + ' ' + an;
+    var joined = ads.length > 1 ? ads.join(joinery) : ads[0];
+    return joined + joinery + an;
   } else {
     return randomName(num);
   }
